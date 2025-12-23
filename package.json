@@ -1,0 +1,21 @@
+{
+  "name": "imgm.dev",
+  "version": "1.0.0",
+  "description": "Neste repositório estou criando um novo site para falar sobre minha carreira profissional, projetos e disponibilizar meus contatos. Este site será o meu currículo online.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "lint:check": "prettier --check .",
+    "lint:fix": "prettier --write ."
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "next": "^13.1.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.7.4"
+  }
+}
