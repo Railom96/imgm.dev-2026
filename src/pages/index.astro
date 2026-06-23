@@ -1,48 +1,121 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
-import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
-import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+			/* Pequenos ajustes de design para deixar o currículo limpo e legível */
+			section {
+				margin-top: 3rem;
+			}
+			h2 {
+				font-size: 1.5rem;
+				border-bottom: 2px solid #e5e7eb;
+				padding-bottom: 0.5rem;
+				margin-bottom: 1.5rem;
+			}
+			.job {
+				margin-bottom: 2rem;
+			}
+			.job h3 {
+				margin: 0;
+				font-size: 1.2rem;
+				color: #111827;
+			}
+			.job span.meta {
+				display: block;
+				font-size: 0.9rem;
+				color: #6b7280;
+				margin-bottom: 0.5rem;
+			}
+			.job ul {
+				margin: 0;
+				padding-left: 1.2rem;
+			}
+			.job li {
+				margin-bottom: 0.3rem;
+			}
+			.education-list {
+				list-style: none;
+				padding: 0;
+			}
+			.education-list li {
+				margin-bottom: 1.2rem;
+			}
+			.education-list h3 {
+				margin: 0;
+				font-size: 1.1rem;
+			}
+			.education-list p {
+				margin: 0;
+				font-size: 0.95rem;
+				color: #4b5563;
+			}
+		</style>
 	</head>
 	<body>
 		<Header />
 		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
+			<h1>Oi, me chamo Israel Messias. 👋</h1>
 			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This template
-				serves as a lightweight, minimally-styled starting point for anyone looking to build a personal
-				website, blog, or portfolio with Astro.
+				Tenho quase 10 anos atuando profissionalmente com TI, mas pelo menos 20 anos sendo curioso e “quebrando coisas” para aprender. 
+				Profissionalmente, sempre atuei na área de suporte e implantação, e agora estou <strong>migrando para desenvolvimento</strong>.
 			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to
-				<a href="https://docs.astro.build/">read the docs</a>
-				or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out
-				<a href="https://github.com/Charca/astro-blog-template">astro-blog-template</a>
-				by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
+
+			<section>
+				<h2>Experiência Profissional</h2>
+				
+				<div class="job">
+					<h3>Técnico de Implantação Jr III</h3>
+					<span class="meta">E-TRUST | Remoto | dez 2022 - abr 2026</span>
+					<ul>
+						<li>Entendimento das necessidades do cliente e implantação personalizada de soluções de software de segurança.</li>
+						<li>Configuração de integrações complexas utilizando Active Directory (AD), protocolos REST e SOAP.</li>
+						<li>Desenvolvimento e documentação de Web Services em PHP para integração com sistemas de terceiros.</li>
+						<li>Utilização de Postman para testes/validações de APIs e administração de bancos de dados MySQL/MariaDB.</li>
+					</ul>
+				</div>
+
+				<div class="job">
+					<h3>Analista de Suporte de TI</h3>
+					<span class="meta">Kian Iluminação | Rio de Janeiro, Brasil | abr 2021 - dez 2022</span>
+					<ul>
+						<li>Administração do Microsoft 365, Active Directory Windows Server, domínios e hospedagem de sites/e-mails.</li>
+						<li>Suporte ao usuário no ERP e treinamento de representantes para utilização do sistema de força de vendas.</li>
+						<li>Manutenção preventiva/corretiva de hardware e software das estações de trabalho e troubleshooting em geral.</li>
+					</ul>
+				</div>
+
+				<div class="job">
+					<h3>Técnico de TI & Chefe de Laboratório</h3>
+					<span class="meta">Sicsú Informática | Rio de Janeiro | mar 2018 - jan 2020</span>
+					<ul>
+						<li>Atendimento terceirizado focado em cartórios, escritórios de advocacia e contabilidade.</li>
+						<li>Administração de Servidores Windows, configuração de redes intermediárias e manutenção de desktops/notebooks.</li>
+						<li>Controle de qualidade de processos, laboratório e calibração de equipamentos com elaboração de relatórios técnicos.</li>
+					</ul>
+				</div>
+			</section>
+
+			<section>
+				<h2>Formação Acadêmica</h2>
+				<ul class="education-list">
+					<li>
+						<h3>Graduação, Análise e Desenvolvimento de Sistemas (Computer Systems Analysis)</h3>
+						<p>PUC Minas | mai 2022 – dez 2024</p>
+					</li>
+					<li>
+						<h3>Especialização, Tecnologia da Informação</h3>
+						<p>curso.dev | dez 2025 – o momento</p>
+					</li>
+				</ul>
+			</section>
 		</main>
 		<Footer />
 	</body>
