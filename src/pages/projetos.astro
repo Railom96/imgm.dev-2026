@@ -1,0 +1,139 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+
+const projetos = [
+	{
+		titulo: "Meu Portfólio Tech",
+		descricao: "Este site que você está navegando agora! Construído com foco em performance e simplicidade para servir como blog e currículo.",
+		tecnologias: ["Astro", "HTML", "CSS", "Markdown"],
+		linkGithub: "https://github.com/Railom96/imgm-site",
+		linkLive: "https://imgm.dev.br"
+	},
+
+];
+---
+
+<!doctype html>
+<html lang="pt-BR">
+	<head>
+		<BaseHead title={`Projetos | ${SITE_TITLE}`} description={SITE_DESCRIPTION} />
+	</head>
+
+	<body>
+		<Header />
+
+		<main>
+			<h1>Projetos</h1>
+			<p class="intro">
+				Aqui estão alguns dos projetos que desenvolvi recentemente.
+			</p>
+
+			<div class="projects-grid">
+				{projetos.map((projeto) => (
+					<article class="project-card">
+						<h3>{projeto.titulo}</h3>
+
+						<p>{projeto.descricao}</p>
+
+						<div class="tags">
+							{projeto.tecnologias.map((tech) => (
+								<span class="tag">{tech}</span>
+							))}
+						</div>
+
+						<div class="links">
+							<a href={projeto.linkGithub} target="_blank" rel="noopener noreferrer">
+								GitHub →
+							</a>
+
+							{projeto.linkLive && (
+								<a href={projeto.linkLive} target="_blank" rel="noopener noreferrer">
+									Live →
+								</a>
+							)}
+						</div>
+					</article>
+				))}
+			</div>
+		</main>
+
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.intro {
+		color: #6b7280;
+		margin-bottom: 3rem;
+		font-size: 1.1rem;
+	}
+
+	.projects-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+		gap: 2rem;
+	}
+
+	.project-card {
+		border: 1px solid #e5e7eb;
+		border-radius: 8px;
+		padding: 1.5rem;
+		transition: box-shadow 0.2s ease, transform 0.2s ease;
+		display: flex;
+		flex-direction: column;
+		background-color: #ffffff;
+	}
+
+	.project-card:hover {
+		box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+		transform: translateY(-2px);
+	}
+
+	.project-card h3 {
+		margin: 0 0 0.5rem 0;
+		font-size: 1.3rem;
+		color: #111827;
+	}
+
+	.project-card p {
+		color: #4b5563;
+		font-size: 0.95rem;
+		flex-grow: 1;
+		margin-bottom: 1.5rem;
+		line-height: 1.5;
+	}
+
+	.tags {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+		margin-bottom: 1.2rem;
+	}
+
+	.tag {
+		background-color: #f3f4f6;
+		color: #374151;
+		font-size: 0.75rem;
+		padding: 0.2rem 0.6rem;
+		border-radius: 9999px;
+		font-weight: 500;
+	}
+
+	.links {
+		display: flex;
+		gap: 1.5rem;
+	}
+
+	.links a {
+		font-size: 0.9rem;
+		font-weight: 600;
+		text-decoration: none;
+		color: var(--accent);
+		display: flex;
+		align-items: center;
+		gap: 0.3rem;
+	}
+</style>
