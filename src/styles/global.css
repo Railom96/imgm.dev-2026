@@ -139,3 +139,64 @@ hr {
 	/* added line to stop words getting smushed together (as they go onto separate lines and some screen readers do not understand line feeds as a space */
 	white-space: nowrap;
 }
+
+/* =========================================
+   MODO ESCURO (DARK MODE)
+   ========================================= */
+html.dark {
+  background-color: #121212;
+  color: #e5e7eb;
+}
+
+html.dark body {
+  color: #e5e7eb;
+}
+
+/* Deixa os links principais com um azul mais agradável no fundo escuro */
+html.dark a {
+  color: #60a5fa; 
+}
+
+/* Ajustes do Cabeçalho e Rodapé */
+html.dark header {
+  background-color: #1e1e1e;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+html.dark header nav a,
+html.dark header h2 a,
+html.dark footer .social-links a {
+  color: #e5e7eb;
+}
+html.dark header nav a.active {
+  border-bottom-color: #60a5fa;
+}
+
+/* Ajustes da Home (Sua trajetória) */
+html.dark .job h3,
+html.dark h1,
+html.dark h2,
+html.dark h3,
+html.dark h4,
+html.dark h5,
+html.dark h6 {
+  color: #f3f4f6;
+}
+html.dark h2 {
+  border-bottom-color: #374151;
+}
+
+/* Ajustes da Página de Projetos */
+html.dark .project-card {
+  background-color: #1e1e1e;
+  border-color: #374151;
+}
+html.dark .project-card p {
+  color: #d1d5db;
+}
+html.dark .tag {
+  background-color: #374151;
+  color: #e5e7eb;
+}
+html.dark .links a {
+  color: #60a5fa;
+}
