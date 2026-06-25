@@ -1,63 +1,43 @@
-# Astro Starter Kit: Blog
+# 👨‍💻 imgm.dev.br | Portfólio e Blog
 
-```sh
-npm create astro@latest -- --template blog
-```
+Bem-vindo ao repositório do meu site pessoal e portfólio! 
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Este projeto foi construído para ser o meu "lar digital", servindo como um currículo online da minha trajetória profissional em TI, um hub para demonstrar meus projetos práticos e, principalmente, um blog focado em compartilhar conhecimentos sobre **Identity and Access Management (IAM)**, Segurança da Informação e Desenvolvimento, e eventualmente compartilhar algumas experiências pessoas e coisas da vida.
 
-Features:
+Você pode acessar o site em produção aqui: **[imgm.dev.br](https://imgm.dev.br)**
 
-- ✅ Minimal styling (make it your own!)
-- ✅ 100/100 Lighthouse performance
-- ✅ SEO-friendly with canonical URLs and Open Graph data
-- ✅ Sitemap support
-- ✅ RSS Feed support
-- ✅ Markdown & MDX support
+---
 
-## 🚀 Project Structure
+## 🎯 Propósito do Projeto
 
-Inside of your Astro project, you'll see the following folders and files:
+1. **Sobre Mim:** Apresentar minha experiência com tecnologia, e falar um pouco sobre minha trajetória profissional.
+2. **Blog Técnico:** Disseminar conhecimento sobre conceitos vitais de segurança, tecnologia e eventualmente experiências da minha pessoal.
+3. **Hub de Projetos:** Centralizar e expor os projetos em que venho trabalhando, com links diretos para os códigos-fonte e demonstrações.
 
-```text
-├── public/
-├── src/
-│   ├── assets/
-│   ├── components/
-│   ├── content/
-│   ├── layouts/
-│   └── pages/
-├── astro.config.mjs
-├── README.md
-├── package.json
-└── tsconfig.json
-```
+---
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## 🛠️ Tecnologias Utilizadas
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+Este site foi desenvolvido com foco em **simplicidade, extrema performance e facilidade de manutenção**, utilizando a seguinte stack:
 
-The `src/content/` directory contains "collections" of related Markdown and MDX documents. Use `getCollection()` to retrieve posts from `src/content/blog/`, and type-check your frontmatter using an optional schema. See [Astro's Content Collections docs](https://docs.astro.build/en/guides/content-collections/) to learn more.
+* **[Astro](https://astro.build/):** Framework de geração de sites estáticos (SSG), escolhido por sua entrega de HTML puro com JavaScript zero por padrão, garantindo carregamento ultrarrápido (100/100 no Lighthouse).
+* **Markdown (`.md`):** Utilizado para a escrita de todos os artigos do blog, separando perfeitamente o conteúdo do código visual.
+* **HTML5 e CSS3:** Para a estrutura e estilização da interface, mantendo um design minimalista, responsivo e focado na leitura.
+* **GitHub Pages:** Hospedagem estática gratuita e confiável.
+* **GitHub Actions:** Pipeline de CI/CD configurada para realizar o *build* e o *deploy* automático do site sempre que um novo commit é feito na branch principal.
 
-Any static assets, like images, can be placed in the `public/` directory.
+---
 
-## 🧞 Commands
+## 🚀 Como rodar o projeto localmente
 
-All commands are run from the root of the project, from a terminal:
+Se você quiser clonar este repositório para estudar a estrutura ou rodá-lo na sua máquina, siga os passos abaixo.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+### Pré-requisitos
+* **Node.js** (Versão 22.12.0 ou superior)
+* **Git**
 
-## 👀 Want to learn more?
+### Passo a passo
 
-Check out [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
-
-## Credit
-
-This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).
+1. **Clone o repositório:**
+   ```bash
+   git clone [https://github.com/Railom96/imgm-site.git](https://github.com/Railom96/imgm-site.git)
