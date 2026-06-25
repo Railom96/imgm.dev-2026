@@ -41,13 +41,13 @@ Se você quiser clonar este repositório para estudar a estrutura ou rodá-lo na
 1. **Clone o repositório:**
    git clone https://github.com/Railom96/imgm-site.git
 
-2. **Acesse a pasta do projeto:*
+2. **Acesse a pasta do projeto:**
    cd imgm-site
 
-3. **Instale as dependências:*
+3. **Instale as dependências:**
    npm install
 
-4. **Inicie o servidor de desenvolvimento local:*
+4. **Inicie o servidor de desenvolvimento local:**
    npm run dev
 
 5. **Abra no navegador:**
