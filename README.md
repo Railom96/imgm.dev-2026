@@ -41,3 +41,36 @@ Se você quiser clonar este repositório para estudar a estrutura ou rodá-lo na
 1. **Clone o repositório:**
    ```bash
    git clone [https://github.com/Railom96/imgm-site.git](https://github.com/Railom96/imgm-site.git)
+
+2. **Acesse a pasta do projeto:*
+   ``bash
+   cd imgm-site
+
+3. **Instale as dependências:*
+   ``bash
+   npm install
+
+4. **Inicie o servidor de desenvolvimento local:*
+   ```bash
+npm run dev
+
+5. **Abra no navegador:**
+Acesse http://localhost:4321 para ver o site rodando. As alterações feitas no código ou nos arquivos Markdown refletirão instantaneamente na tela.
+
+### 📂 Estrutura Principal do Código
+
+├── src/
+│   ├── assets/       # Imagens e fontes otimizadas pelo Astro
+│   ├── components/   # Componentes reutilizáveis (Header, Footer, etc)
+│   ├── content/      # Onde a mágica acontece: artigos do blog em Markdown
+│   └── pages/        # Rotas do site (index.astro, projetos.astro, blog/)
+├── astro.config.mjs  # Configurações do framework, sitemap e domínio
+└── .github/workflows/ # Configuração do deploy automático via GitHub Actions
+
+### 🔗 Redes e Contato
+LinkedIn: Israel Messias
+
+[e-mail](mailto:israelmessias96@gmail.com)
+[linkedin](https://www.linkedin.com/in/israelmessias96/).
+[Instagram](https://www.instagram.com/imgm.dev/)
+[x.com](https://x.com/imgmpontodev).
