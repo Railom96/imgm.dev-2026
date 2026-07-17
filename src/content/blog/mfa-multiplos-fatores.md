@@ -2,7 +2,7 @@
 title: 'MFA (Múltiplos Fatores): Por que apenas uma senha forte não basta?'
 description: 'Entenda o que é a Autenticação de Múltiplos Fatores (MFA), como ela funciona e por que é a principal linha de defesa em Identity and Access Management (IAM).'
 pubDate: 'Jun 26 2026'
-heroImage: '../../assets/blog-placeholder-3.jpg'
+heroImage: '../../assets/blog-placeholder-4.jpg'
 ---
 
 Nós já falamos aqui no blog sobre como a **autenticação** prova quem você é e como o **SSO (Single Sign-On)** centraliza esse processo para facilitar a sua vida. Mas existe um problema grave na internet hoje: as senhas vazam.
