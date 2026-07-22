@@ -2,7 +2,7 @@
 title: 'Autenticação x Autorização: Entenda de uma vez por todas a diferença'
 description: 'Descubra a diferença entre Autenticação (AuthN) e Autorização (AuthZ), conceitos fundamentais para quem atua com Identity and Access Management (IAM).'
 pubDate: 'Jun 23 2026'
-heroImage: '../../assets/blog-placeholder-1.jpg'
+heroImage: '../../assets/autenticacaoxautorizacao.png'
 ---
 
 Quem trabalha com tecnologia, especialmente com Identity and Access Management (IAM), já ouviu — e provavelmente já explicou — a diferença entre autenticação e autorização. Apesar disso, esses dois conceitos ainda geram bastante confusão, principalmente entre profissionais iniciantes.
