@@ -7,116 +7,290 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
 <!doctype html>
 <html lang="pt-BR">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-		<style>
-			/* Pequenos ajustes de design para deixar o currículo limpo e legível */
-			section {
-				margin-top: 3rem;
-			}
-			h2 {
-				font-size: 1.5rem;
-				border-bottom: 2px solid #e5e7eb;
-				padding-bottom: 0.5rem;
-				margin-bottom: 1.5rem;
-			}
-			.job {
-				margin-bottom: 2rem;
-			}
-			.job h3 {
-				margin: 0;
-				font-size: 1.2rem;
-				color: #111827;
-			}
-			.job span.meta {
-				display: block;
-				font-size: 0.9rem;
-				color: #6b7280;
-				margin-bottom: 0.5rem;
-			}
-			.job ul {
-				margin: 0;
-				padding-left: 1.2rem;
-			}
-			.job li {
-				margin-bottom: 0.3rem;
-			}
-			.education-list {
-				list-style: none;
-				padding: 0;
-			}
-			.education-list li {
-				margin-bottom: 1.2rem;
-			}
-			.education-list h3 {
-				margin: 0;
-				font-size: 1.1rem;
-			}
-			.education-list p {
-				margin: 0;
-				font-size: 0.95rem;
-				color: #4b5563;
-			}
-		</style>
-	</head>
-	<body>
-		<Header />
-		<main>
-			<h1>Oi, me chamo Israel Messias. 👋</h1>
-			<p>
-				Tenho quase 10 anos atuando profissionalmente com TI, mas pelo menos 20 anos sendo curioso e “quebrando coisas” para aprender. 
-				Profissionalmente, sempre atuei na área de suporte e implantação, e agora estou <strong>migrando para desenvolvimento</strong>.
-			</p>
+<head>
+	<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 
-			<section>
-				<h2>Experiência Profissional</h2>
-				
-				<div class="job">
-					<h3>Técnico de Implantação Jr III</h3>
-					<span class="meta">E-TRUST | Remoto | dez 2022 - abr 2026</span>
-					<ul>
-						<li>Entendimento das necessidades do cliente e implantação personalizada de soluções de software de segurança.</li>
-						<li>Configuração de integrações complexas utilizando Active Directory (AD), protocolos REST e SOAP.</li>
-						<li>Desenvolvimento e documentação de Web Services em PHP para integração com sistemas de terceiros.</li>
-						<li>Utilização de Postman para testes/validações de APIs e administração de bancos de dados MySQL/MariaDB.</li>
-					</ul>
-				</div>
+	<style>
 
-				<div class="job">
-					<h3>Analista de Suporte de TI</h3>
-					<span class="meta">Kian Iluminação | Rio de Janeiro, Brasil | abr 2021 - dez 2022</span>
-					<ul>
-						<li>Administração do Microsoft 365, Active Directory Windows Server, domínios e hospedagem de sites/e-mails.</li>
-						<li>Suporte ao usuário no ERP e treinamento de representantes para utilização do sistema de força de vendas.</li>
-						<li>Manutenção preventiva/corretiva de hardware e software das estações de trabalho e troubleshooting em geral.</li>
-					</ul>
-				</div>
+		main{
+			max-width:900px;
+			margin:auto;
+		}
 
-				<div class="job">
-					<h3>Técnico de TI & Chefe de Laboratório</h3>
-					<span class="meta">Sicsú Informática | Rio de Janeiro | mar 2018 - jan 2020</span>
-					<ul>
-						<li>Atendimento terceirizado focado em cartórios, escritórios de advocacia e contabilidade.</li>
-						<li>Administração de Servidores Windows, configuração de redes intermediárias e manutenção de desktops/notebooks.</li>
-						<li>Controle de qualidade de processos, laboratório e calibração de equipamentos com elaboração de relatórios técnicos.</li>
-					</ul>
-				</div>
-			</section>
+		.hero{
+			padding:4rem 0;
+		}
 
-			<section>
-				<h2>Formação Acadêmica</h2>
-				<ul class="education-list">
-					<li>
-						<h3>Graduação, Análise e Desenvolvimento de Sistemas (Computer Systems Analysis)</h3>
-						<p>PUC Minas | mai 2022 – dez 2024</p>
-					</li>
-					<li>
-						<h3>Especialização, Tecnologia da Informação</h3>
-						<p>curso.dev | dez 2025 – o momento</p>
-					</li>
-				</ul>
-			</section>
-		</main>
-		<Footer />
-	</body>
+		.hero h1{
+			font-size:3rem;
+			margin-bottom:.5rem;
+		}
+
+		.hero h2{
+			font-size:1.3rem;
+			font-weight:400;
+			color:#6b7280;
+			margin-top:0;
+		}
+
+		.hero p{
+			font-size:1.1rem;
+			line-height:1.8;
+			margin-top:2rem;
+		}
+
+		.buttons{
+			display:flex;
+			gap:1rem;
+			margin-top:2rem;
+			flex-wrap:wrap;
+		}
+
+		.button{
+			padding:.8rem 1.5rem;
+			border-radius:10px;
+			background:#111827;
+			color:white;
+			text-decoration:none;
+			transition:.2s;
+		}
+
+		.button:hover{
+			transform:translateY(-2px);
+		}
+
+		section{
+			margin:5rem 0;
+		}
+
+		h3{
+			font-size:2rem;
+			margin-bottom:1rem;
+		}
+
+		.cards{
+			display:grid;
+			grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+			gap:1.5rem;
+			margin-top:2rem;
+		}
+
+		.card{
+			padding:1.5rem;
+			border:1px solid #e5e7eb;
+			border-radius:14px;
+			background:white;
+		}
+
+		.card h4{
+			margin-top:0;
+		}
+
+		.timeline{
+			border-left:3px solid #e5e7eb;
+			padding-left:2rem;
+		}
+
+		.timeline p{
+			margin-bottom:2rem;
+		}
+
+		.posts ul{
+			padding-left:20px;
+			line-height:2;
+		}
+
+		footer{
+			margin-top:6rem;
+		}
+
+	</style>
+
+</head>
+
+<body>
+
+<Header />
+
+<main>
+
+<section class="hero">
+
+<h1>Olá, eu sou Israel Messias 👋</h1>
+
+<h2>
+Especialista em Identity & Access Management (IAM),
+Linux, Self-Hosting e Desenvolvimento Web.
+</h2>
+
+<p>
+
+Sou apaixonado por tecnologia desde criança e acredito que a melhor forma de aprender é colocando a mão na massa.
+
+Atualmente trabalho com implantação de soluções de Identity & Access Management (IAM), desenvolvendo integrações com Active Directory, APIs REST/SOAP e sistemas corporativos.
+
+Nas horas vagas construo aplicações web, mantenho meu próprio homelab utilizando Docker e Linux e compartilho tudo o que aprendo através deste blog.
+
+</p>
+
+<div class="buttons">
+
+<a class="button" href="/projetos">🚀 Projetos</a>
+
+<a class="button" href="/blog">📝 Blog</a>
+
+<a class="button" href="https://github.com/Railom96" target="_blank">GitHub</a>
+
+<a class="button" href="https://linkedin.com/in/israelmessias" target="_blank">LinkedIn</a>
+
+</div>
+
+</section>
+
+<section>
+
+<h3>O que faço</h3>
+
+<div class="cards">
+
+<div class="card">
+
+<h4>🔐 Identity & Access Management</h4>
+
+<p>
+
+Implantação de soluções IAM, integrações com Active Directory, autenticação, autorização, APIs REST/SOAP e automação de processos.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h4>🐧 Linux & Self Hosting</h4>
+
+<p>
+
+Meu laboratório pessoal roda Ubuntu Server, Docker, WireGuard, Pi-hole, Jellyfin, Nextcloud e diversos serviços auto-hospedados.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h4>💻 Desenvolvimento</h4>
+
+<p>
+
+Construo aplicações utilizando PHP, JavaScript, Astro, HTML, CSS e bancos de dados relacionais.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h3>Minha trajetória</h3>
+
+<div class="timeline">
+
+<p>
+
+Comecei minha carreira trabalhando com suporte técnico e infraestrutura, resolvendo problemas de hardware, redes e servidores Windows.
+
+</p>
+
+<p>
+
+Com o tempo migrei para implantação de soluções corporativas, onde passei a atuar diretamente com Identity & Access Management, integrações entre sistemas e autenticação corporativa.
+
+</p>
+
+<p>
+
+Hoje continuo atuando profissionalmente com IAM, enquanto estudo desenvolvimento de software, arquitetura de sistemas e computação em nuvem para ampliar ainda mais minha atuação na área de tecnologia.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<h3>O que estou estudando atualmente</h3>
+
+<div class="cards">
+
+<div class="card">
+
+<ul>
+
+<li>Okta</li>
+
+<li>OAuth 2.0</li>
+
+<li>OpenID Connect</li>
+
+<li>SAML</li>
+
+<li>Docker</li>
+
+<li>Kubernetes</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<ul>
+
+<li>Astro</li>
+
+<li>TypeScript</li>
+
+<li>Cloud Computing</li>
+
+<li>Arquitetura de Software</li>
+
+<li>Linux</li>
+
+<li>Cyber Security</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="posts">
+
+<h3>Sobre este site</h3>
+
+<p>
+
+Este espaço funciona como meu laboratório público.
+
+Aqui compartilho projetos pessoais, escrevo artigos sobre Identity & Access Management, segurança da informação, Linux, desenvolvimento e documentei boa parte da construção do meu homelab.
+
+Meu objetivo é aprender em público e produzir conteúdo que possa ajudar outros profissionais que estejam seguindo uma jornada semelhante.
+
+</p>
+
+</section>
+
+</main>
+
+<Footer />
+
+</body>
+
 </html>
