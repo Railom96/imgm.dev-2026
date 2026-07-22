@@ -1,7 +1,7 @@
 ---
 title: 'Zero Trust: Entenda por que "Nunca Confie, Sempre Verifique" se tornou o novo padrão da segurança'
 description: 'Descubra o que é Zero Trust, como funciona esse modelo de segurança e por que ele é essencial para ambientes modernos de nuvem, trabalho remoto e Identity and Access Management (IAM).'
-pubDate: 'Jun 24 2026'
+pubDate: 'Jul 22 2026'
 heroImage: '../../assets/zerotrust.png'
 ---
 

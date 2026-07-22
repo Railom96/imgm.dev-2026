@@ -1,7 +1,7 @@
 ---
 title: 'Passwordless: O que é autenticação sem senha e por que ela representa o futuro da segurança digital'
 description: 'Entenda o que é Passwordless Authentication, como funcionam as Passkeys e o padrão FIDO2, além das vantagens da autenticação sem senha para usuários e empresas.'
-pubDate: 'Jun 27 2026'
+pubDate: 'Jul 16 2026'
 heroImage: '../../assets/passwordless.jpg'
 ---
 
