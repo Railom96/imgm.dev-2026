@@ -2,7 +2,7 @@
 title: 'Construindo meu Homelab: o melhor laboratório de tecnologia que já tive'
 description: 'Como transformei um notebook antigo em um ambiente self-hosted com Docker, WireGuard, Nextcloud, Jellyfin, Pi-hole e IA local para estudar infraestrutura, segurança e DevOps.'
 pubDate: 'Jul 22 2026'
-heroImage: '../../assets/homelab.md'
+heroImage: '../../assets/homelab.png'
 ---
 
 Quando comecei minha carreira em TI, sempre ouvi que a melhor forma de aprender era colocando a mão na massa. Depois de muitos anos trabalhando com suporte, implantação de sistemas e Identity and Access Management (IAM), decidi montar algo que me permitisse testar tecnologias sem depender de ambientes corporativos.
