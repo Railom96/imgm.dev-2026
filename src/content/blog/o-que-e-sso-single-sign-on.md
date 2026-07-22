@@ -2,7 +2,7 @@
 title: 'O que é SSO (Single Sign-On) e como ele facilita a nossa vida?'
 description: 'Entenda o conceito de logon único (SSO), como ele funciona nos bastidores e por que ele é uma das ferramentas mais importantes em Identity and Access Management (IAM).'
 pubDate: 'Jun 24 2026'
-heroImage: '../../assets/blog-placeholder-2.jpg'
+heroImage: '../../assets/sso.png'
 ---
 
 Se você utiliza a internet no seu dia a dia, é muito provável que já tenha se deparado com a seguinte situação: ao tentar acessar um novo site ou aplicativo, em vez de preencher um longo formulário de cadastro, você simplesmente clica em um botão que diz **"Continuar com o Google"** ou **"Entrar com a conta Microsoft"**. 
